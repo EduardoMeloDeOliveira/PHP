@@ -1,0 +1,5 @@
+Nessa aula, aprendemos a importância de organizar o código para facilitar a manutenção e a legibilidade. Vimos como a duplicação de código pode ser um problema em projetos maiores e como as funções podem nos ajudar a resolver esse problema.
+
+Criamos uma função chamada exibeMensagemLancamento() para exibir uma mensagem sobre o lançamento de um filme, reutilizando o código em diferentes partes do nosso projeto.
+
+Aprendemos também sobre os parâmetros das funções, que permitem que elas recebam informações para realizar suas tarefas.

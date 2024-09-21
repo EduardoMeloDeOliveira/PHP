@@ -1,0 +1,9 @@
+Nessa aula, aprendemos sobre a expressão condicional match, uma ferramenta poderosa do PHP para controlar o fluxo do nosso código.
+
+Vimos como ela funciona comparando um valor com diferentes opções e atribuindo um resultado específico para cada caso.
+
+Também exploramos a importância de ter um caso padrão (default) para lidar com situações em que o valor não corresponde a nenhuma das opções definidas.
+
+Com a match, podemos criar código mais organizado e eficiente, simplificando a tomada de decisões em nossos programas.
+
+Lembre-se que a match é uma expressão, então, ela precisa ser finalizada com um ponto e vírgula (;).
