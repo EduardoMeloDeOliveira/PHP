@@ -1,0 +1,3 @@
+Nesta aula, aprendemos sobre a importância de ter um formato de dados que podemos manipular via código, como o JSON. Vimos como transformar um array associativo em PHP em um objeto JSON usando a função json_encode e como transformar um objeto JSON em um array associativo usando a função json_decode.
+
+Também exploramos a utilidade do JSON no desenvolvimento web, pois ele é interpretado diretamente pelo JavaScript no front-end.

@@ -1,0 +1,7 @@
+Nessa aula, aprendemos a salvar um array associativo em um arquivo JSON. Para isso, usamos a função json_encode() para transformar o array em uma string JSON e a função file_put_contents() para escrever essa string em um arquivo.
+
+A função file_put_contents() recebe dois parâmetros: o caminho do arquivo e o conteúdo a ser escrito. Usamos __DIR__ para indicar o diretório atual do arquivo e concatenamos com o nome do arquivo, '/filme.json'.
+
+No final, salvamos o arquivo filme.json no diretório "screen-match" e verificamos se o JSON foi salvo corretamente.
+
+Agora, o desafio é criar um novo arquivo PHP que lê o filme.json e transforma seu conteúdo em um array associativo para exibir na tela.

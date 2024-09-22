@@ -1,0 +1,11 @@
+Nessa aula, aprendemos como importar dados de um arquivo JSON para o PHP.
+
+Primeiro, criamos um arquivo chamado importar.php e definimos o caminho do arquivo JSON usando a variável $caminhoArquivo.
+
+Depois, usamos a função file_get_contents para ler o conteúdo do arquivo JSON e armazená-lo na variável $conteudoArquivoFilme.
+
+Em seguida, usamos a função json_decode para transformar o conteúdo JSON em um array associativo, armazenando-o na variável $filme.
+
+Por fim, usamos a função var_dump para exibir o conteúdo do array $filme no terminal.
+
+Vimos também que podemos modificar o conteúdo do arquivo JSON e, ao executar o código novamente, o PHP irá ler as alterações.
