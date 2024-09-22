@@ -1,0 +1,47 @@
+aula-01 notes: Nessa aula, aprendemos a organizar o código do ScreenMatch usando uma função construtora chamada criaFilme(). Essa função define os parâmetros obrigatórios para criar um filme, garantindo que todos os filmes tenham as mesmas características.
+Também exploramos os parâmetros nomeados, que permitem chamar a função criaFilme() com os parâmetros em qualquer ordem, desde que os nomes estejam corretos. Isso facilita a leitura e a manutenção do código, especialmente quando temos muitos parâmetros.
+
+
+
+aula-02 notes: Nessa aula, aprendemos a organizar melhor o código do nosso projeto ScreenMatch, preparando-o para um cenário real de desenvolvimento.
+Vimos que é importante separar o código em pastas, como "src" para funções e "public" para arquivos acessíveis pela web.
+Também renomeamos o arquivo screen-match.php para index.php, que é o arquivo principal de uma aplicação web.
+Essa organização facilita a manutenção do código, tornando-o mais fácil de entender e de encontrar erros.
+
+
+
+aula-03 notes: Essa aula foi bem legal, né? Nela, aprendemos a identificar e interpretar os erros que o PHP nos mostra, como warnings e fatal errors.
+Vimos que os erros são nossos amigos, pois nos ajudam a encontrar e corrigir problemas no nosso código.
+Aprendemos a identificar o tipo de erro, a mensagem de erro, onde ele aconteceu e como podemos corrigir.
+Também vimos a diferença entre require e include, e quando usar cada um.
+
+
+
+para-saber-mais-01 notes: As declarações include_once e require_once incluem e avaliam o arquivo informado durante a execução do script da mesma forma que include e require, mas com uma única diferença: se o código do arquivo já foi incluído, não o fará novamente. Como o nome sugere, o arquivo será incluído somente uma vez.
+Essas instruções podem ser utilizadas nos casos em que o mesmo arquivo pode ser incluído e avaliado mais de uma vez durante uma execução de um script em particular, neste caso, ajudará a evitar problemas como redefinição de funções, reatribuição de valores de variáveis etc.
+
+
+
+aula-04 notes: Essa aula foi bem legal, né? Nela, aprendemos como o PHP funciona na web, e como ele se conecta com o servidor web.
+O servidor web é como um "porteiro" que fica esperando as conexões da internet, como se fossem "visitantes". Quando uma conexão chega, ele sabe o que fazer, como enviar a requisição para o PHP.
+O PHP, então, executa o código e devolve a resposta para o servidor web, que, por sua vez, envia para o cliente, que é o seu navegador.
+Para testar o PHP, podemos usar o servidor web embutido no PHP, que é bem prático para o desenvolvimento.
+Para iniciar o servidor, basta usar o comando php -S localhost:8001 -t public no terminal.
+Assim, o servidor ficará disponível na URL localhost:8001 e tudo que estiver na pasta public será acessível.
+
+
+aula-05 notes: Nessa aula, aprendemos como receber dados de um formulário HTML via PHP e salvar esses dados em um arquivo JSON.
+Primeiro, criamos um arquivo PHP chamado exporta-arquivo.php que recebe os dados do formulário através da variável mágica $_POST.
+Depois, usamos a função var_dump() para visualizar os dados recebidos e criamos um array associativo $filme para armazenar os dados do formulário.
+Por fim, usamos a função file_put_contents() para salvar o array $filme como um arquivo JSON chamado filme.json.
+Legal, né?
+Agora, você já sabe como receber dados de um formulário HTML e salvá-los em um arquivo JSON usando PHP!
+
+
+
+aula-06 notes: Nessa aula, aprendemos como o PHP pode trabalhar junto com o HTML para criar páginas web dinâmicas.
+Vimos como o padrão POST/Redirect/GET é importante para lidar com formulários e garantir que os dados sejam processados corretamente.
+Também aprendemos a usar a função header() para redirecionar a pessoa usuária para outra página e como passar parâmetros na URL usando $_GET.
+Com isso, conseguimos criar um código que recebe dados de um formulário, salva em um arquivo JSON e exibe uma mensagem de sucesso na página de destino.
+
+

@@ -1,7 +1,0 @@
-Nessa aula, aprendemos a organizar o código do ScreenMatch usando funções construtoras e parâmetros nomeados.
-
-Primeiro, criamos uma função criaFilme() que define os parâmetros obrigatórios para criar um filme, garantindo que todos os filmes tenham as mesmas informações.
-
-Depois, exploramos os parâmetros nomeados, que permitem chamar funções com os parâmetros em qualquer ordem, usando seus nomes para identificar cada um. Isso facilita a leitura e a organização do código, especialmente quando temos muitos parâmetros.
-
-Com essas ferramentas, podemos criar um código mais organizado e robusto, evitando erros e garantindo que os filmes sejam criados com as informações corretas.
