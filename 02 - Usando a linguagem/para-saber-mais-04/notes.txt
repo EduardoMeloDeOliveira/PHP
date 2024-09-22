@@ -1,0 +1,5 @@
+Um assunto muito importante quando falamos de programação, independente da linguagem, é a operação com textos. Nós entendemos nesta aula que o PHP fornece diversas funções que manipulam strings e a documentação cita um conceito chamado de expressões regulares (regular expressions ou regex).
+
+Expressões regulares são um assunto bastante completo e complexo, por isso há cursos específicos sobre elas. Esse conhecimento é extremamente valioso para toda pessoa que pretende trabalhar com programação, mas você que está começando a se aventurar nesse mundo agora pode deixar para estudar esse tema um pouco mais tarde.
+
+

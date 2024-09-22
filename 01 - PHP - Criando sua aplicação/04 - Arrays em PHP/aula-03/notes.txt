@@ -1,5 +1,0 @@
-Começamos criando um array vazio e adicionando notas a ele, uma por uma, usando um loop for. Depois, aprendemos a converter o tipo das notas de string para float, usando o cast.
-
-Vimos também como adicionar um item ao final do array, sem precisar especificar o índice, e como somar os elementos do array usando um loop for e a função count().
-
-Por fim, exploramos o loop foreach, que facilita a iteração sobre arrays, e a função array_sum, que soma todos os elementos de um array de forma rápida e eficiente.

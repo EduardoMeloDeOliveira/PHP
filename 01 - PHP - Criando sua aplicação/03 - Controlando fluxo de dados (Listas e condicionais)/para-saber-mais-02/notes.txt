@@ -1,9 +1,0 @@
-Além das estruturas de controle de fluxo que vimos até aqui (if/elseif/else, switch case e match), o PHP também possui um operador que nos permite tomar decisões que resultam em uma expressão: o operador ternário ?:.
-
-Esse operador serve para avaliar determinada expressão, caso seja verdadeira, retornar uma segunda expressão e, caso seja falso, retornar uma terceira expressão. O uso de 3 possíveis expressões é o que dá nome a esse operador. Sua sintaxe é a seguinte:
-
-$resultado = $expressao1 ? $expressao2 : $expressao3;
-Copiar código
-Se $expressao1 for verdadeira (true), $resultado terá o valor de $expressão2. Caso contrário, $resultado terá o valor de $expressão3.
-
-Esse operador não é tão simples de se entender no início, então, não se preocupe se não tiver ficado claro por enquanto. Conforme nós vamos avançando nos estudos, esse tipo de operador mais “complexo” vai fazer mais sentido.

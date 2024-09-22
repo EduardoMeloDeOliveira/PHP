@@ -1,0 +1,5 @@
+Nessa aula, aprendemos sobre algumas funções que o PHP oferece para manipular arrays. Vimos como usar a função sort() para ordenar os elementos de um array e a função min() para encontrar o menor valor dentro de um array.
+
+Também exploramos o conceito de passagem de parâmetro por referência, que permite que uma função modifique o valor original de uma variável passada como argumento.
+
+E para finalizar, aprendemos a usar a função var_dump() para inspecionar o conteúdo de uma variável durante o desenvolvimento.

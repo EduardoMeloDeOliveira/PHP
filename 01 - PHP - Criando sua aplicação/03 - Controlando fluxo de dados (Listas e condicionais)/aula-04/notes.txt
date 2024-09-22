@@ -1,7 +1,0 @@
-Nessa aula, aprendemos sobre o loop while, que é uma estrutura de repetição que executa um bloco de código enquanto uma condição for verdadeira.
-
-Vimos que o while é útil quando não sabemos quantas vezes precisamos repetir uma ação, como quando estamos lendo um arquivo com um número indeterminado de linhas.
-
-Também conhecemos o do while, que é uma estrutura similar ao while, mas que executa o bloco de código pelo menos uma vez antes de verificar a condição.
-
-Por fim, aprendemos que o for é a estrutura de repetição mais utilizada no dia a dia, pois é ideal para quando sabemos quantas vezes precisamos repetir uma ação.

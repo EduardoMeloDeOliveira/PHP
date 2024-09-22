@@ -1,7 +1,0 @@
- aprendemos a configurar o ambiente de desenvolvimento com o Visual Studio Code e criamos nosso primeiro programa em PHP, exibindo a mensagem "Hello world!".
-
-Vimos que o PHP é uma linguagem de programação de propósito geral, mas especialmente adequada para o desenvolvimento web. Ela é executada em servidores web e permite que criemos aplicações que interagem com o usuário, como sites e aplicativos.
-
-Também aprendemos a usar a função echo para exibir texto na tela e a importância de usar a extensão .php para nossos arquivos.
-
-Na próxima aula, vamos conhecer a aplicação que vamos construir durante o curso e aprender mais sobre o PHP!

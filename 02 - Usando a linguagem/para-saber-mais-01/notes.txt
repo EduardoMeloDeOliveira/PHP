@@ -1,0 +1,3 @@
+O PHP, assim como a maioria das linguagens modernas, tem em sua biblioteca padrão diversas funções para manipulação de arrays. Com essas funções você pode recuperar valores, chaves, realizar filtros, mapear valores de um array resultando em outro, reduzir um array a um único valor (como a soma dos valores) etc.
+
+link de referência da documentação: https://www.php.net/manual/en/ref.array.php

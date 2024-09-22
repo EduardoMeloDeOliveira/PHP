@@ -1,0 +1,3 @@
+Nessa aula, aprendemos sobre a importância de usar funções para organizar nosso código e evitar repetições. Vimos como criar uma função chamada incluidoNoPlano() que verifica se um filme está incluso no plano do usuário, usando os parâmetros planoPrime e anoLancamento.
+
+A função incluidoNoPlano() retorna um valor booleano (true ou false) que indica se o filme está incluso no plano. Para isso, usamos a palavra-chave return para devolver o resultado da expressão $planoPrime || $anoLancamento < 2020.

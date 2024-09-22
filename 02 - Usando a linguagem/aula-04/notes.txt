@@ -1,0 +1,5 @@
+Nessa aula, aprendemos como organizar nosso código em vários arquivos, separando as funções em um arquivo à parte e utilizando o require para incluí-lo no arquivo principal.
+
+Vimos também como usar o __DIR__ para obter o caminho absoluto do arquivo atual e garantir que o PHP encontre o arquivo que queremos incluir, independentemente de onde estamos executando o código.
+
+No final, aprendemos que é importante usar caminhos absolutos para evitar problemas com a localização dos arquivos, tornando nosso código mais robusto e fácil de manter.

@@ -1,0 +1,5 @@
+Nessa aula, aprendemos a importância de organizar o código em funções para evitar repetições e facilitar a manutenção.
+
+Vimos como criar uma função chamada exibeMensagemLancamento que recebe o ano de lançamento como parâmetro e exibe uma mensagem informando se o filme é um lançamento, se ainda é novo ou se já não é mais um lançamento.
+
+Também aprendemos sobre a palavra reservada function no PHP, que é usada para definir funções

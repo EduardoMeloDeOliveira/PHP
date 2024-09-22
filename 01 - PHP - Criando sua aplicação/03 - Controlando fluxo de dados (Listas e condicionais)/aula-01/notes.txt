@@ -1,7 +1,0 @@
-Nessa aula, aprendemos como tomar decisões no PHP usando as estruturas condicionais if, elseif e else.
-
-Vimos como podemos usar essas estruturas para verificar se uma condição é verdadeira e executar um bloco de código específico.
-
-Também aprendemos sobre a importância da indentação no código para melhorar a legibilidade e organização.
-
-Por fim, exploramos a diferença entre expressões e blocos condicionais, e como as expressões podem ser avaliadas e armazenadas em variáveis.

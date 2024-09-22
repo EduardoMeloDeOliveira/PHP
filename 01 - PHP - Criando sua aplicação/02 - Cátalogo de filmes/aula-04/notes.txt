@@ -1,9 +1,0 @@
-Nessa aula, aprendemos como receber dados do usuário através do terminal, usando o PHP.
-
-Vimos que a variável $argv armazena todos os valores passados na linha de comando, incluindo o nome do arquivo que está sendo executado.
-
-Para acessar um valor específico, usamos a sintaxe $argv[índice], onde o índice 0 corresponde ao nome do arquivo e os índices seguintes correspondem aos parâmetros passados.
-
-Também aprendemos sobre o operador de coalescência nula (??), que permite definir um valor padrão caso o valor à esquerda seja nulo.
-
-Com isso, podemos criar programas que interagem com o usuário e tomam decisões com base nos dados fornecidos.

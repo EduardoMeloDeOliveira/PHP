@@ -1,0 +1,1 @@
+Há uma especificidade do PHP que é o fato de ele sempre assumir em suas funções que cada caractere de uma string ocupa especificamente 1 byte. O que isso quer dizer? Lidar com strings que têm caracteres com acento pode nos trazer algumas dores de cabeça. Para isso, existem funções fornecidas por uma extensão do PHP chamada mbstring.

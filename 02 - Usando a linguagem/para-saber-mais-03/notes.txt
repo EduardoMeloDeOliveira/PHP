@@ -1,0 +1,5 @@
+Assim como é o caso com arrays, o PHP também tem diversas funções que manipulam strings. Com essas funções você pode recuperar partes de uma string, verificar a existência de uma string dentro de outra, separar partes de uma string em um array etc.
+
+
+
+link de referência na documentação: https://www.php.net/manual/en/ref.strings.php

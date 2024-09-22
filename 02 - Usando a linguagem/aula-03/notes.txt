@@ -1,0 +1,7 @@
+Nessa aula, aprendemos sobre funções que manipulam textos no PHP, também chamadas de strings. Vimos como usar a função var_dump() para exibir informações sobre uma string, como seu tipo e tamanho.
+
+Também exploramos a função strpos(), que nos permite encontrar a posição de um caractere específico dentro de uma string. Por exemplo, podemos usar strpos() para encontrar a posição do caractere ":" no título de um filme.
+
+Além disso, aprendemos a usar a função substr() para extrair um pedaço de uma string, chamada de substring. Com substr(), podemos pegar uma parte específica de uma string, como o nome principal de um filme antes do caractere ":".
+
+Por fim, vimos que alguns parâmetros de funções podem ser opcionais, ou seja, não precisam ser passados na chamada da função. Se um parâmetro for opcional, ele deve ter um valor padrão definido.

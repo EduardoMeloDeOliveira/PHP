@@ -1,0 +1,5 @@
+Vimos que, ao definir o tipo de um parâmetro, garantimos que a função só aceite valores do tipo correto, evitando erros e tornando o código mais seguro.
+
+Também aprendemos sobre o tipo void, que indica que uma função não retorna nenhum valor.
+
+Com essa prática, nosso código fica mais robusto e fácil de entender, além de recebermos avisos da IDE caso haja algum erro de tipo.

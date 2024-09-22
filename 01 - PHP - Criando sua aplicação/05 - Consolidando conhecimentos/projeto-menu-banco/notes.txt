@@ -1,7 +1,0 @@
-O objetivo é criar um menu com opções para consultar o saldo, sacar, depositar e sair. Para isso, precisamos aprender a:
-
-Capturar dados do usuário: Usamos a função fgets(STDIN) para ler a entrada do usuário no terminal.
-Converter tipos de dados: Podemos converter a entrada do usuário para números usando (int) ou (float).
-Criar um loop: Usamos um loop para exibir o menu e aguardar a escolha do usuário.
-Utilizar condicionais: Usamos if para verificar a opção escolhida pelo usuário e executar a ação correspondente.
-O desafio é criar o programa completo, incluindo a validação de saldo para saques e a atualização do saldo para depósitos.

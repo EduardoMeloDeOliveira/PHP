@@ -1,5 +1,0 @@
-aprendemos como usar variáveis no PHP para armazenar informações sobre um filme, como o nome, ano de lançamento, nota e se ele está incluso no plano.
-
-Vimos que as variáveis no PHP começam com o símbolo de cifrão ($) e que podemos atribuir diferentes tipos de dados a elas, como texto, números inteiros, números decimais e valores booleanos (verdadeiro ou falso).
-
-Também aprendemos a exibir o conteúdo das variáveis usando a função echo e como adicionar uma quebra de linha para organizar a saída do nosso código.
