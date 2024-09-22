@@ -1,0 +1,7 @@
+Nessa aula, aprendemos sobre arrays associativos, que são como dicionários, onde cada chave (uma string) está associada a um valor específico.
+
+Por exemplo, podemos ter um array que representa um filme, com as chaves "nome", "ano", "nota" e "genero", cada uma com seu respectivo valor.
+
+Para acessar o valor de uma chave específica, basta usar a chave entre colchetes, como $filme['nome'].
+
+Essa estrutura é muito útil para lidar com dados que vêm de fontes externas, como formulários da web.

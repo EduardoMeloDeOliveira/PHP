@@ -1,0 +1,7 @@
+Nesta aula, aprendemos sobre arrays, uma estrutura de dados fundamental no PHP. Eles são como listas que podem armazenar vários valores, e são super úteis para organizar informações.
+
+Vimos como criar arrays usando colchetes [], e como acessar seus elementos usando índices numéricos que começam em zero. Também exploramos a sintaxe antiga de arrays usando a função array(), mas a forma com colchetes é mais comum e moderna.
+
+Além disso, aprendemos que arrays podem ser usados para armazenar diferentes tipos de dados, como números, strings e até mesmo outros arrays.
+
+No próximo vídeo, vamos aprender sobre arrays associativos, que nos permitem usar chaves personalizadas para acessar os elementos, tornando o código mais organizado e legível.

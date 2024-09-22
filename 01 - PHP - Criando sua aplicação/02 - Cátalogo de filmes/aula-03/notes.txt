@@ -1,0 +1,5 @@
+Nesta aula, aprendemos sobre o tipo de dado string, que é usado para armazenar textos no PHP. Vimos que o PHP considera até mesmo números como strings quando estão entre aspas.
+
+Também exploramos os caracteres de escape, como \n para quebra de linha e \t para tabulação, que nos permitem formatar o texto de forma mais organizada.
+
+Por fim, aprendemos duas maneiras de juntar textos: concatenação usando o operador ponto (.) e interpolação, que permite inserir variáveis diretamente dentro de strings com aspas duplas.

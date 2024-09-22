@@ -1,0 +1,5 @@
+Nessa aula, aprendemos sobre os operadores em PHP, que são ferramentas essenciais para manipular dados. Vimos os operadores matemáticos, como adição (+), subtração (-), multiplicação (*) e divisão (/), e como eles se comportam em relação à precedência.
+
+Também exploramos os operadores lógicos, como "ou" (||) e "e" (&&), que nos permitem combinar condições para tomar decisões no código. Além disso, aprendemos sobre os operadores de comparação, que são usados para verificar se um valor é maior, menor, igual ou diferente de outro.
+
+Com os operadores, podemos realizar cálculos, comparar valores e tomar decisões em nossos programas PHP.
