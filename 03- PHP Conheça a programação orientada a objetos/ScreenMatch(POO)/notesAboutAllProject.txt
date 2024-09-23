@@ -1,0 +1,95 @@
+O problema é que as informações do filme estão todas espalhadas em variáveis soltas, sem uma estrutura definida. Isso dificulta a organização, a leitura e a manutenção do código.
+
+Para resolver isso, vamos aprender a usar a orientação a objetos, que nos permite criar modelos para representar os dados e os comportamentos de um filme.
+
+A ideia é ter um código mais organizado, com os dados e as funções que os manipulam unidos em um só lugar.
+
+Na próxima aula, vamos começar a criar esse modelo para o filme no arquivo Filme.php.
+
+Criamos uma classe chamada Filme, que define as características essenciais de um filme, como nome, ano de lançamento, gênero e nota.
+
+Para acessar as variáveis dentro da classe, usamos o operador seta (->).
+
+Também aprendemos a usar a palavra reservada new para criar uma instância da classe Filme, ou seja, um objeto do tipo Filme.
+
+Por fim, modificamos a função criaFilme() para retornar um objeto Filme em vez de um array associativo, tornando nosso código mais organizado e intuitivo.
+
+
+Vimos que, ao atribuir um objeto a outra variável, não estamos copiando o objeto em si, mas sim a referência para o mesmo espaço de memória onde ele está armazenado. Isso significa que, se você modificar o objeto através de uma das variáveis, a mudança será refletida na outra variável também.
+
+É como se você tivesse duas chaves que abrem a mesma porta: qualquer chave que você usar para abrir a porta, a porta será aberta. ️
+
+A aula também nos mostrou como classes e objetos funcionam em PHP. Uma classe é como um molde para criar objetos, e um objeto é uma instância da classe, ou seja, um exemplo concreto da classe.
+
+Por exemplo, a classe "Filme" define as características de um filme, como nome, ano de lançamento, gênero e nota. Podemos criar vários objetos do tipo "Filme", cada um com seus próprios valores para essas características.
+
+No final da aula, vimos que precisamos ter cuidado com a forma como acessamos os dados dos objetos, pois alterações em um objeto podem afetar outros objetos que compartilham a mesma referência.
+
+O paradigma conhecido como Programação Orientada a Objetos possui 4 famosos pilares, e nós vamos passar por todos eles durante o curso. De forma indireta, inclusive, já vimos o primeiro: a Abstração.
+
+Essa palavra pode ter muitos significados, inclusive no próprio mundo da programação, mas quando falamos sobre os pilares da Orientação a Objetos, abstração se refere à habilidade de nos concentrarmos nos aspectos mais essenciais do contexto onde estamos trabalhando. Por exemplo, ao modelar um Filme em nosso sistema, não precisamos trazer a faixa de áudio, a legenda, a lista completa de atores, o orçamento dele, etc. Para o ScreenMatch, apenas nome, ano de lançamento, gênero e suas notas é o suficiente.
+
+A ideia é focar no que será efetivamente útil e necessário para desenvolver o sistema onde trabalhamos para evitar desperdício e aumento de complexidade. É um conceito bastante simples, na verdade, e inclusive pode ser utilizado em outros paradigmas de programação.
+
+Outros significados da palavra abstração quando o assunto é Orientação a Objetos surgirão conforme nós avançamos no estudo dessa área, mas por enquanto foque nesse princípio de trazer ao código somente os conceitos que precisam ser trazidos e abstrair o que não será necessário.
+
+Primeiro, criamos uma função chamada avalia() na classe Filme para receber as notas e armazená-las em um array chamado notas.
+
+Depois, criamos outra função chamada media() para calcular a média das notas armazenadas no array.
+
+Para acessar as notas dentro das funções, usamos a palavra reservada this, que se refere ao objeto que está executando a função.
+
+No final, aprendemos que this indica o objeto que está sendo usado para executar a função, e que podemos acessar as propriedades e funções do objeto através dele.
+
+Nesta aula, aprendemos sobre a importância dos métodos dentro de uma classe. Eles são como funções especiais que pertencem à classe e podem ser utilizados nos seus objetos.
+
+Vimos que, ao criarmos vários objetos da mesma classe, os métodos não são copiados para cada um deles. Em vez disso, o PHP usa um mecanismo inteligente: ele guarda a definição do método em um único lugar e, quando um objeto precisa usar o método, ele simplesmente informa ao PHP qual objeto está chamando o método.
+
+Para isso, existe uma variável especial chamada this, que está presente em todos os métodos e aponta para o objeto que está usando o método.
+
+Além disso, aprendemos que podemos controlar o acesso aos métodos usando a palavra-chave public, que permite que qualquer parte do código acesse o método.
+
+Nessa aula, aprendemos sobre a importância de controlar o acesso aos dados dentro de uma classe. Vimos como a palavra-chave private nos permite tornar propriedades da classe privadas, ou seja, acessíveis apenas dentro da própria classe. Isso impede que outras partes do código modifiquem ou acessem esses dados de forma indevida, garantindo a integridade e segurança dos nossos dados.
+
+Imagine um filme com suas avaliações. Se deixássemos as notas públicas, qualquer código poderia zerar todas as avaliações, prejudicando a média do filme. Com private, garantimos que apenas o método avalia() pode adicionar ou modificar as notas, mantendo a lógica da nossa aplicação consistente.
+
+No entanto, precisamos encontrar uma forma de acessar essas propriedades privadas de forma controlada, sem abrir mão da segurança. No próximo vídeo, vamos aprender como fazer isso!
+
+Nessa aula, aprendemos sobre a importância de manter as propriedades de uma classe privadas, garantindo que elas só sejam acessadas e modificadas através de métodos específicos.
+
+Vimos como criar métodos getters para recuperar o valor de uma propriedade privada e setters para definir um novo valor para ela.
+
+Também discutimos as vantagens de usar métodos de acesso, como a possibilidade de implementar regras de negócio e garantir a consistência dos dados.
+
+No entanto, a aula deixou claro que nem sempre é necessário ter um setter para cada propriedade. Em alguns casos, podemos usar outras técnicas para garantir que os dados sejam encapsulados e acessíveis de forma controlada.
+
+
+Até aqui, já vimos dois dos quatro pilares da Orientação a Objetos:
+
+Abstração
+Encapsulamento
+O encapsulamento ajuda a garantir que os nossos objetos se mantenham em um estado consistente, e também facilita o uso da nossa classe por outros desenvolvedores. Quando criamos um método que nos dá a nota média do filme, por exemplo, garantimos que os demais desenvolvedores do projeto não precisarão se preocupar em como calcular essa informação. E se for necessário alterar esse cálculo no futuro, temos a certeza de que só precisaremos alterar em um único lugar.
+
+
+Nesta aula, aprendemos sobre o método construtor, uma ferramenta poderosa para inicializar objetos de forma eficiente e organizada.
+
+O construtor é um método especial que é chamado automaticamente quando criamos um novo objeto. Ele recebe os parâmetros necessários para configurar as propriedades do objeto, garantindo que ele seja criado em um estado consistente.
+
+Vimos como podemos usar o construtor para eliminar a necessidade de setters, simplificar o código e garantir que todas as propriedades sejam inicializadas corretamente.
+
+Também exploramos a sintaxe de promoção de parâmetros, que permite que os parâmetros do construtor sejam automaticamente promovidos a propriedades da classe, tornando o código mais conciso e legível.
+
+Com o construtor, nosso código se torna mais robusto, organizado e fácil de manter.
+
+No último vídeo, conhecemos um método que é executado automaticamente quando instanciamos um objeto. Praticamente toda linguagem que suporta Orientação a Objetos possui métodos construtores, mas o PHP possui diversos outros métodos que são executados automaticamente em determinados momentos. O PHP os chama de métodos mágicos.
+
+No artigo Explorando Métodos Mágicos no PHP: Conceitos e Exemplos Práticos você vai entender melhor o conceito e ver exemplos de métodos mágicos que o PHP possui.
+
+
+Nesta aula, aprendemos sobre o modificador readonly em PHP, que garante que as propriedades de uma classe sejam somente para leitura, ou seja, seus valores só podem ser definidos uma vez, geralmente no construtor.
+
+Vimos como usar o readonly para tornar as propriedades nome, anoLancamento e genero da classe Filme somente para leitura, eliminando a necessidade de métodos getters.
+
+Com o readonly, nosso código fica mais seguro e conciso, pois evitamos modificações indesejadas e simplificamos o acesso às propriedades.
+
+No entanto, ainda há um detalhe importante a ser ajustado: a definição do gênero do filme. Atualmente, podemos atribuir qualquer valor à propriedade genero, o que não é ideal.
