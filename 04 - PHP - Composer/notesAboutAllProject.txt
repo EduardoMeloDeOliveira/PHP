@@ -1,0 +1,31 @@
+Imagine que você está construindo uma casa. Para isso, você precisa de vários materiais, como tijolos, cimento, madeira, etc. ️ Cada material é como uma dependência do seu projeto.
+
+O Composer é como um gerente de compras que te ajuda a encontrar e organizar todos os materiais que você precisa para construir sua casa. Ele vai te ajudar a encontrar os melhores fornecedores (pacotes) e garantir que você tenha tudo o que precisa para começar a construir.
+
+No caso do Composer, você vai usar o terminal para "pedir" os materiais (pacotes) que você precisa para o seu projeto PHP. Ele vai baixar os pacotes e organizá-los de forma que você possa usá-los facilmente.
+
+Assim como você não precisa se preocupar em ir até a loja de materiais de construção para comprar cada tijolo, o Composer te ajuda a ter tudo o que você precisa para o seu projeto PHP sem precisar se preocupar com os detalhes de cada dependência.
+
+Nessa aula, aprendemos como iniciar um projeto com o Composer. Vimos que ele é um gerenciador de dependências, como o Yum e o Apt, mas focado em projetos, e não no sistema operacional.
+
+Para começar, criamos um arquivo composer.json no nosso projeto, que contém informações importantes como o nome, a descrição, o tipo do projeto e as dependências que ele precisa.
+
+O Composer nos ajuda a organizar as dependências do nosso projeto, garantindo que todas as bibliotecas necessárias estejam disponíveis para o funcionamento do nosso código.
+
+Que legal que você está se aventurando no mundo do Composer!
+
+Nessa aula, aprendemos como encontrar os pacotes que precisamos para o nosso projeto. O Composer usa um site chamado Packagist para armazenar os pacotes públicos.
+
+Para encontrar os pacotes que precisamos, podemos fazer uma busca no Packagist. Por exemplo, se precisarmos fazer uma requisição HTTP, podemos procurar por "http client" e encontrar o pacote "guzzlehttp/guzzle". Se precisarmos analisar o HTML, podemos procurar por "dom crawler" e encontrar o pacote "symfony/dom-crawler".
+
+Cada pacote no Packagist tem uma página com informações sobre ele, como a documentação e como usá-lo.
+
+Nessa aula, aprendemos sobre a importância de gerenciar dependências em projetos PHP, utilizando o Composer. Vimos como instalar pacotes como o Guzzle e o DomCrawler, que facilitam a realização de requisições HTTP e o parsing de HTML, respectivamente.
+
+O Composer, além de instalar as dependências, também as organiza em uma pasta chamada "vendor", garantindo que todas as dependências necessárias estejam disponíveis para o seu projeto.
+
+Também vimos como o Composer atualiza o arquivo composer.json, adicionando as dependências instaladas, e como o arquivo composer.lock registra as versões exatas de cada dependência instalada.
+
+Com o Composer, você pode instalar, atualizar e gerenciar as dependências do seu projeto de forma eficiente e organizada.
+
+Lembre-se que o Composer é uma ferramenta essencial para o desenvolvimento de projetos PHP, e entender como ele funciona é fundamental para garantir que seu projeto tenha todas as dependências necessárias para funcionar corretamente.

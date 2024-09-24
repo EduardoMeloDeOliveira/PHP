@@ -1,0 +1,19 @@
+{
+    "name": "alura/buscador-cursos",
+    "description": "buscador de cursos no site da alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Alura\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EduardoMeloDeOliveira",
+            "email": "eduardo.moliveira@sptech.school"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
