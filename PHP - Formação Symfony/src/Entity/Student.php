@@ -14,9 +14,10 @@ class Student
     #[Id]
     #[GeneratedValue(strategy: "AUTO")]
     #[Column]
-    public readonly int $id;
+    public int $id;
 
-    public function  __construct(
+    public function __construct(
+
         #[Column]
         private string $name,
     )
@@ -33,7 +34,6 @@ class Student
     {
         $this->name = $name;
     }
-
 
 
 }
