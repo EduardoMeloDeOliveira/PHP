@@ -29,3 +29,18 @@ Também vimos como o Composer atualiza o arquivo composer.json, adicionando as d
 Com o Composer, você pode instalar, atualizar e gerenciar as dependências do seu projeto de forma eficiente e organizada.
 
 Lembre-se que o Composer é uma ferramenta essencial para o desenvolvimento de projetos PHP, e entender como ele funciona é fundamental para garantir que seu projeto tenha todas as dependências necessárias para funcionar corretamente.
+
+
+No vídeo anterior, ao digitar composer install a nova dependência (Symfony DomCrawler) não foi instalada. O pacote só foi buscado pelo composer ao executar composer update.
+
+Isso se dá pelo seguinte fato: O comando composer install lê o arquivo composer.lock e instala as exatas dependências lá definidas. No nosso caso, nós já tinhamos o arquivo criado, então o composer.lock foi lido e como não havia alterações, nada foi instalado.
+
+Já o comando composer update lê o arquivo composer.json, instala as dependências mais atuais dentro das restrições definidas e atualiza o composer.lock.
+
+Sendo assim, em um projeto em andamento (tendo o arquivo composer.lock), para instalarmos uma nova dependência precisamos executar o composer require ou após adicionar a dependência no arquivo composer.json executar o comando composer update
+
+Nessa aula, aprendemos como gerenciar dependências no PHP usando o Composer. Vimos como o arquivo composer.json define as dependências do nosso projeto e como o composer.lock armazena as versões exatas instaladas.
+
+Também exploramos o uso do DomCrawler para analisar o HTML da página da Alura e extrair os nomes dos cursos. Para isso, usamos o método filter() para selecionar os elementos <span> com a classe card-curso__nome.
+
+Por fim, aprendemos sobre o autoload do Composer, que permite que o PHP encontre as classes das dependências sem precisarmos especificar o caminho completo. Isso torna o código mais organizado e facilita a manutenção do projeto.
