@@ -8,13 +8,22 @@ use Symfony\Component\DomCrawler\Crawler;
 class Buscador
 {
 
-    /**@var ClientInterface*/
+    /**
+     * 
+     *
+     * @var ClientInterface
+     */
     private $httpClient;
 
-    /**@var Crawler*/
+    /**
+     * 
+     *
+     * @var Crawler
+     */
     private $crawler;
 
-    public function __construct(ClientInterface $httpClient,Crawler $crawler){
+    public function __construct(ClientInterface $httpClient,Crawler $crawler)
+    {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
 

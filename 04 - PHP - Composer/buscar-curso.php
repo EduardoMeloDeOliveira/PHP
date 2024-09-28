@@ -1,7 +1,6 @@
 <?php
 
 require __DIR__ . "/vendor/autoload.php";
-require_once __DIR__ . "/src/Buscador.php";
 
 $client = new \GuzzleHttp\Client(['base_uri' => 'https://www.alura.com.br/',"verify" => false]);
 $crawler = new \Symfony\Component\DomCrawler\Crawler();

@@ -17,5 +17,15 @@
         "guzzlehttp/guzzle": "^7.9",
         "symfony/dom-crawler": "^7.1",
         "symfony/css-selector": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.3",
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd": "^2.15",
+        "phan/phan": "^5.4"
+    },
+    "scripts" : {
+        "cs" : "phpcs --standard=PSR12 src/",
+        "cbf" : ".\\vendor\\squizlabs\\php_codesniffer\\bin\\phpcbf src/"
     }
 }

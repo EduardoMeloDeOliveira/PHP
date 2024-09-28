@@ -44,3 +44,11 @@ Nessa aula, aprendemos como gerenciar dependências no PHP usando o Composer. Vi
 Também exploramos o uso do DomCrawler para analisar o HTML da página da Alura e extrair os nomes dos cursos. Para isso, usamos o método filter() para selecionar os elementos <span> com a classe card-curso__nome.
 
 Por fim, aprendemos sobre o autoload do Composer, que permite que o PHP encontre as classes das dependências sem precisarmos especificar o caminho completo. Isso torna o código mais organizado e facilita a manutenção do projeto.
+
+Essa aula foi sobre o padrão PSR-4, que define como o Composer deve mapear os namespaces das nossas classes para os arquivos do projeto.
+
+O PSR-4 é um padrão que garante que as bibliotecas e componentes do Composer sejam reutilizáveis em diferentes frameworks. Ele define que cada classe deve ter um namespace principal, chamado de "vendor namespace", que geralmente é o nome do autor ou do projeto.
+
+Para mapear os namespaces para os arquivos, o PSR-4 usa uma estrutura de pastas. Por exemplo, se o namespace principal for Alura\BuscadorDeCursos, todas as classes nesse namespace estarão dentro da pasta "src". Se tivermos um namespace Alura\BuscadorDeCursos\Helper, as classes nesse namespace estarão dentro da pasta "src/helper".
+
+O nome do arquivo deve ser igual ao nome da classe, com a extensão .php.
