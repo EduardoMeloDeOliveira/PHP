@@ -1,32 +1,11 @@
-aula01:
-Imagine que você é um cozinheiro e precisa preparar um prato delicioso. Você tem todos os ingredientes, mas precisa organizá-los e saber como combiná-los para criar a receita perfeita. ‍
+Imagine que você está construindo uma casa. Cada mudança que você faz, como adicionar um cômodo, trocar a cor da parede ou instalar uma nova porta, precisa ser registrada para que outros construtores possam replicar as mesmas mudanças em outras casas.
 
-O Doctrine é como um ajudante de cozinha que te auxilia nessa tarefa. Ele te permite organizar os ingredientes (dados do banco de dados) de forma organizada e fácil de usar, sem precisar se preocupar com os detalhes da receita (SQL).
+As migrations no Doctrine funcionam como um "diário de obras" da sua base de dados. Cada alteração que você faz no banco de dados, como criar uma tabela, adicionar uma coluna ou modificar um campo, é registrada em um arquivo de migration.
 
-Você pode dizer ao Doctrine: "Eu quero um ingrediente chamado 'nome' e outro chamado 'idade'". O Doctrine vai buscar esses ingredientes no banco de dados e te entregar tudo pronto para usar na sua receita (código).
+Assim como você pode usar o diário de obras para reconstruir uma casa, você pode usar os arquivos de migration para reconstruir sua base de dados em outro ambiente, como o servidor de produção. ️
 
-Mas, assim como um cozinheiro precisa entender os ingredientes para criar pratos incríveis, você também precisa entender o SQL para usar o Doctrine com maestria.
+Com as migrations, você garante que todos os seus desenvolvedores estejam trabalhando com a mesma versão do banco de dados, evitando problemas de incompatibilidade.
 
-O Doctrine te ajuda a cozinhar pratos deliciosos (aplicativos) de forma rápida e eficiente, mas você precisa saber os ingredientes (SQL) para criar receitas (código) ainda mais saborosas!
+E para que as migrations funcionem corretamente, você precisa configurar o Doctrine para que ele saiba onde encontrar os arquivos de migration e como se conectar ao banco de dados. ️
 
-aula02:
-Imagine que você está construindo uma casa. Você tem os tijolos, a madeira, o cimento, etc. Esses materiais são como as classes e objetos que você cria no seu código. Mas para construir a casa, você precisa organizar esses materiais, saber onde cada um vai ser usado, certo?
-
-O Doctrine é como um mestre de obras que te ajuda a organizar tudo! Ele pega seus objetos e os transforma em "tijolos" para construir a sua casa no banco de dados. ️
-
-O Doctrine usa o padrão Data Mapper, que é como um "plano de construção" que define como cada objeto será transformado em uma tabela no banco de dados. ️
-
-Ele te diz qual coluna vai receber cada informação do objeto, qual o tipo de dado que cada coluna vai armazenar, etc.
-
-Assim como o mestre de obras precisa saber como organizar os materiais para construir a casa, o Doctrine precisa saber como organizar seus objetos para construir a sua estrutura no banco de dados.
-
-aula03:
-Imagine que você tem um restaurante e precisa organizar os pedidos dos clientes. Você pode ter um caderninho onde anota tudo, mas com o tempo, fica difícil de encontrar as informações.
-
-O Doctrine é como um sistema de gerenciamento de pedidos que te ajuda a organizar tudo de forma eficiente. Ele funciona como um tradutor entre o seu código PHP (o seu restaurante) e o banco de dados (o seu caderninho).
-
-O Doctrine ORM é como o garçom que recebe o pedido do cliente (seu código PHP) e o transforma em um pedido para a cozinha (o banco de dados). Ele sabe exatamente como preparar cada prato (cada entidade) e como entregar tudo no tempo certo.
-
-O Doctrine também tem outras ferramentas, como o componente de Coleções, que é como um armário onde você organiza os ingredientes para cada prato.
-
-Com o Doctrine, você não precisa se preocupar com os detalhes de como o banco de dados funciona, você só precisa se concentrar em criar o seu código PHP e deixar o Doctrine cuidar do resto.
+É como se você estivesse dando as coordenadas para o "chefe de obras" saber onde encontrar os planos da casa e como chegar ao local da construção. ️

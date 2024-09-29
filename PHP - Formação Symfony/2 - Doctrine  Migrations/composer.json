@@ -2,11 +2,16 @@
   "require": {
     "doctrine/orm": "^3",
     "doctrine/dbal": "^4",
-    "symfony/cache": "^7"
+    "symfony/cache": "^7",
+    "doctrine/migrations": "^3.8"
   },
   "autoload": {
     "psr-4": {
       "Alura\\Doctrine\\": "src/"
     }
+  },
+  "scripts": {
+    "generate-migrations": "php .\\vendor\\bin\\doctrine-migrations migrations:generate\n",
+    "run-migrations": " php .\\vendor\\bin\\doctrine-migrations migrations:migrate\n"
   }
 }
