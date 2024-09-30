@@ -11,7 +11,8 @@
     }
   },
   "scripts": {
-    "generate-migrations": "php .\\vendor\\bin\\doctrine-migrations migrations:generate\n",
-    "run-migrations": " php .\\vendor\\bin\\doctrine-migrations migrations:migrate\n"
+    "gen-migrate": "php .\\vendor\\bin\\doctrine-migrations migrations:generate\n",
+    "run-migrate": " php .\\vendor\\bin\\doctrine-migrations migrations:migrate\n",
+    "diff-migrate" : " php .\\vendor\\bin\\doctrine-migrations migrations:diff\n"
   }
 }

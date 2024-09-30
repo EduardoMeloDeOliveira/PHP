@@ -1,15 +1,21 @@
 <?php
 
+use Alura\Doctrine\Entity\Course;
+use Alura\Doctrine\Entity\Phone;
 use Alura\Doctrine\Entity\Student;
+use Alura\Doctrine\Helper\EntityManagerCreator;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-$entityManager = \Alura\Doctrine\Helper\EntityManagerCreator::createEntityManager();
+$entityManager = EntityManagerCreator::createEntityManager();
 
-$studentRepository = $entityManager->getRepository(Student::class);
+$studentEntity = Student::class;
+
+$repository = $entityManager->getRepository($studentEntity);
+
 
 /**@var Student[] $students */
-$students = $studentRepository->findAll();
+$students = $repository->studentsAndCourses();
 
 foreach ($students as $student) {
 
@@ -19,11 +25,10 @@ foreach ($students as $student) {
     echo "Nome: $name\n";
 
     echo implode(',', $student->getPhones()
-            ->map(fn(\Alura\Doctrine\Entity\Phone $phone) => $phone->number)
-            ->toArray()) . "\n\n";
+            ->map(fn(Phone $phone) => $phone->number)
+            ->toArray()) . "\n";
     echo implode(',' , $student->getCourses()
-        ->map(fn(\Alura\Doctrine\Entity\Course $course)=>$course->title)
-        ->toArray()) . "\n\n";
-
+        ->map(fn(Course $course)=>$course->title)
+        ->toArray()) . "\n";
 
 }

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: 1033
+      MYSQL_DATABASE: estudantes
+    ports:
+      - "3306:3306"

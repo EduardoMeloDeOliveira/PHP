@@ -1,0 +1,122 @@
+<?php //Alura__Doctrine__Entity__Phone__CLASSMETADATA__
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Mapping\\FieldMapping'] ?? Registry::p('Doctrine\\ORM\\Mapping\\FieldMapping')),
+        clone $p['Doctrine\\ORM\\Mapping\\FieldMapping'],
+        clone ($p['Doctrine\\ORM\\Mapping\\ManyToOneAssociationMapping'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ManyToOneAssociationMapping')),
+        clone ($p['Doctrine\\ORM\\Mapping\\JoinColumnMapping'] ?? Registry::p('Doctrine\\ORM\\Mapping\\JoinColumnMapping')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'namespace' => [
+                'Alura\\Doctrine\\Entity',
+            ],
+            'rootEntityName' => [
+                'Alura\\Doctrine\\Entity\\Phone',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => $o[1],
+                    'number' => $o[2],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'number' => 'number',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'number' => 'number',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'Phone',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'student' => $o[3],
+                ],
+            ],
+            'idGenerator' => [
+                $o[5],
+            ],
+            'name' => [
+                'Alura\\Doctrine\\Entity\\Phone',
+                4 => 'student_id',
+            ],
+            'id' => [
+                1 => true,
+            ],
+            'type' => [
+                1 => 'integer',
+                'string',
+            ],
+            'fieldName' => [
+                1 => 'id',
+                'number',
+            ],
+            'columnName' => [
+                1 => 'id',
+                'number',
+            ],
+            'fetch' => [
+                3 => 2,
+            ],
+            'sourceEntity' => [
+                3 => 'Alura\\Doctrine\\Entity\\Phone',
+            ],
+            'sourceToTargetKeyColumns' => [
+                3 => [
+                    'student_id' => 'id',
+                ],
+            ],
+            'targetToSourceKeyColumns' => [
+                3 => [
+                    'id' => 'student_id',
+                ],
+            ],
+            'joinColumns' => [
+                3 => [
+                    $o[4],
+                ],
+            ],
+            'joinColumnFieldNames' => [
+                3 => [
+                    'student_id' => 'student_id',
+                ],
+            ],
+            'referencedColumnName' => [
+                4 => 'id',
+            ],
+        ],
+        'Doctrine\\ORM\\Mapping\\AssociationMapping' => [
+            'fieldName' => [
+                3 => 'student',
+            ],
+            'targetEntity' => [
+                3 => 'Alura\\Doctrine\\Entity\\Student',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+);

@@ -1,0 +1,51 @@
+<?php //2887e87220a96a775f9b0a1de6804a6891187599
+
+return [1727744381, [
+    'query=SELECT s0_.id AS id_0, s0_.name AS name_1, p1_.id AS id_2, p1_.number AS number_3, c2_.id AS id_4, c2_.title AS title_5, p1_.student_id AS student_id_6 FROM Student s0_ LEFT JOIN Phone p1_ ON s0_.id = p1_.student_id LEFT JOIN student_course s3_ ON s0_.id = s3_.student_id LEFT JOIN Course c2_ ON c2_.id = s3_.course_id&params=a:0:{}&types=a:0:{}&connectionParams=e338c920c01d61a14ff99fce42d70f6f302cdd590ded8634ed8f199488bdd99b' => [
+        [
+            'id_0' => 1,
+            'name_1' => 'Eduardo Melo de Oliveira',
+            'id_2' => null,
+            'number_3' => null,
+            'id_4' => 2,
+            'title_5' => 'symfony',
+            'student_id_6' => null,
+        ],
+        [
+            'id_0' => 2,
+            'name_1' => 'Teste',
+            'id_2' => null,
+            'number_3' => null,
+            'id_4' => null,
+            'title_5' => null,
+            'student_id_6' => null,
+        ],
+        [
+            'id_0' => 3,
+            'name_1' => 'lala moove',
+            'id_2' => null,
+            'number_3' => null,
+            'id_4' => null,
+            'title_5' => null,
+            'student_id_6' => null,
+        ],
+        [
+            'id_0' => 4,
+            'name_1' => 'Teste 3',
+            'id_2' => null,
+            'number_3' => null,
+            'id_4' => null,
+            'title_5' => null,
+            'student_id_6' => null,
+        ],
+        [
+            'id_0' => 6,
+            'name_1' => 'teste 99',
+            'id_2' => 1,
+            'number_3' => '(11) 951982245',
+            'id_4' => null,
+            'title_5' => null,
+            'student_id_6' => 6,
+        ],
+    ],
+]];

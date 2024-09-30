@@ -1,0 +1,100 @@
+<?php //Alura__Doctrine__Entity__Course__CLASSMETADATA__
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Mapping\\FieldMapping'] ?? Registry::p('Doctrine\\ORM\\Mapping\\FieldMapping')),
+        clone $p['Doctrine\\ORM\\Mapping\\FieldMapping'],
+        clone ($p['Doctrine\\ORM\\Mapping\\ManyToManyInverseSideMapping'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ManyToManyInverseSideMapping')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'namespace' => [
+                'Alura\\Doctrine\\Entity',
+            ],
+            'rootEntityName' => [
+                'Alura\\Doctrine\\Entity\\Course',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => $o[1],
+                    'title' => $o[2],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'title' => 'title',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'title' => 'title',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'Course',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'student' => $o[3],
+                ],
+            ],
+            'idGenerator' => [
+                $o[4],
+            ],
+            'name' => [
+                'Alura\\Doctrine\\Entity\\Course',
+            ],
+            'id' => [
+                1 => true,
+            ],
+            'type' => [
+                1 => 'integer',
+                'string',
+            ],
+            'fieldName' => [
+                1 => 'id',
+                'title',
+            ],
+            'columnName' => [
+                1 => 'id',
+                'title',
+            ],
+            'fetch' => [
+                3 => 2,
+            ],
+            'sourceEntity' => [
+                3 => 'Alura\\Doctrine\\Entity\\Course',
+            ],
+            'mappedBy' => [
+                3 => 'courses',
+            ],
+        ],
+        'Doctrine\\ORM\\Mapping\\AssociationMapping' => [
+            'fieldName' => [
+                3 => 'student',
+            ],
+            'targetEntity' => [
+                3 => 'Alura\\Doctrine\\Entity\\Student',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+);

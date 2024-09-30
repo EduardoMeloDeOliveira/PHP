@@ -9,3 +9,11 @@ Com as migrations, você garante que todos os seus desenvolvedores estejam traba
 E para que as migrations funcionem corretamente, você precisa configurar o Doctrine para que ele saiba onde encontrar os arquivos de migration e como se conectar ao banco de dados. ️
 
 É como se você estivesse dando as coordenadas para o "chefe de obras" saber onde encontrar os planos da casa e como chegar ao local da construção. ️
+
+Imagine o Doctrine como um chef de cozinha e você como o cozinheiro. Você precisa de ingredientes para preparar um prato delicioso, e o Doctrine, como um bom ajudante, sabe exatamente onde encontrar cada ingrediente e como combiná-los. As entidades, como "Aluno", "Telefone" e "Curso", são os seus ingredientes. O DQL (Doctrine Query Language) te permite "pedir" ao seu ajudante para buscar os ingredientes que você precisa, como se você estivesse pedindo para ele ir até a despensa e trazer todos os "Alunos" que estão lá. Você também pode pedir para ele buscar apenas o "Nome" de um "Aluno" específico. O DQL te dá mais controle sobre como o Doctrine busca os dados que você precisa, como ter um ajudante que entende exatamente o que você precisa e te entrega os ingredientes na hora certa
+
+A aula explica como o Doctrine pode ser "preguiçoso" (fetch: 'LAZY') ou "ansioso" (fetch: 'EAGER') ao buscar informações no banco de dados.
+
+LAZY: Busca informações adicionais só quando você precisa, como ir até a lista de amigos para pegar o endereço só quando for entregar o convite.
+EAGER: Busca todas as informações de uma vez, como pegar o endereço de todos os amigos antes de começar a entregar os convites.
+A aula mostra que, em alguns casos, é melhor usar o fetch: 'EAGER' para evitar várias "viagens" ao banco de dados, mesmo que isso signifique buscar mais informações do que você precisa.
