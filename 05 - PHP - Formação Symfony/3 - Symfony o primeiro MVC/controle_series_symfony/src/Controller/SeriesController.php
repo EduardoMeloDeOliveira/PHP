@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use http\Env\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,6 +19,19 @@ class SeriesController extends AbstractController
             "Game of thrones"
         ];
 
-        return new JsonResponse($serieList);
+//        return new JsonResponse($serieList);
+
+        return $this->render("series/index.html.twig",
+            [
+                "controller_name" => "Lista de séries",
+                "seriesList" => $serieList
+
+            ]);
+    }
+
+    #[Route('/series/create', methods: ['GET'])]
+    public function form():Response
+    {
+        return $this->render(view: "series/form.html.twig");
     }
 }
