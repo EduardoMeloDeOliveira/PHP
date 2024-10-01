@@ -10,13 +10,14 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class SeriesController extends AbstractController
 {
-    #[Route('/series', name: 'app_series')]
+    #[Route('/', name: 'app_series')]
     public function index(): Response
     {
         $serieList = [
             "Dois homens e meio",
             "Limtless",
-            "Game of thrones"
+            "Game of thrones",
+            "House of dragons"
         ];
 
 //        return new JsonResponse($serieList);
@@ -34,7 +35,7 @@ class SeriesController extends AbstractController
     {
 
       return $this->render("series/form.html.twig" , [
-          "controller_name" => "Adicione uma nova série :)",
+          "controller_name" => "Adicione uma nova série",
       ]);
 
     }

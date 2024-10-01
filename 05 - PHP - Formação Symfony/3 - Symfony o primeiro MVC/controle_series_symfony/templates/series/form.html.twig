@@ -1,25 +1,23 @@
 {% extends 'base.html.twig' %}
 
-
 {% block title%}
-{{ controller_name }}
+    {{ controller_name }}
 {% endblock %}
 
-
 {% block body %}
+
+
     <form method="post">
 
         <div class="d-flex flex-column align-items-center justify-content-center">
             <label for="serieName" class="form-label ">Nome da série</label>
             <input type="text" id="serieName" name="seriesName" class="form-control w-25">
             <button class="btn btn-dark mt-3">Adicionar</button>
-
-
         </div>
 
 
+        <a class="btn btn-secondary ms-3 mt-4" href="/">Voltar</a>
 
     </form>
 
 {% endblock %}
-
