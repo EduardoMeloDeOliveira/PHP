@@ -32,6 +32,10 @@ class SeriesController extends AbstractController
     #[Route('/series/create', methods: ['GET'])]
     public function form():Response
     {
-        return $this->render(view: "series/form.html.twig");
+
+      return $this->render("series/form.html.twig" , [
+          "controller_name" => "Adicione uma nova série :)",
+      ]);
+
     }
 }
