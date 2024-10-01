@@ -79,6 +79,9 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "importmap:install": "symfony-cmd"
         },
+
+        "up-up" : "php -S localhost:8080 -t public",
+
         "post-install-cmd": [
             "@auto-scripts"
         ],
