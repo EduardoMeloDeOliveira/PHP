@@ -22,16 +22,23 @@ class SeriesController extends AbstractController
     }
 
     #[Route('/series', name: 'app_series')]
-    public function index(): Response
+    public function index(Request $request): Response
     {
         $serieList = $this->repository->findAll();
+        $session = $request->getSession();
+        $success = $session->get('success');
+        $error = $session->get('error');
+        $session->remove('success');
+        $session->remove('error');
 
-//        return new JsonResponse($serieList);
+
 
         return $this->render("series/index.html.twig",
             [
                 "controller_name" => "Lista de séries",
-                "seriesList" => $serieList
+                "seriesList" => $serieList,
+                "successMessage" => $success,
+                "errorMessage" => $error
 
             ]);
     }
@@ -52,22 +59,34 @@ class SeriesController extends AbstractController
     {
         $getFromInput = $request->request->get('seriesName');
         $serie = new Series($getFromInput);
-
+        $serieName = $serie->getName();
 
         $this->repository->save($serie);
+        $session = $request->getSession();
+        $session->set('success', "Série {$serieName} foi adicionada com sucesso");
 
         return new RedirectResponse("/series", 201);
     }
 
     #[Route("/series/{id}", name: 'app_delete_series', methods: ['DELETE'])]
-    public function deleteSerie(int $id): Response
+    public function deleteSerie(int $id, Request $request): Response
     {
         $serie = $this->repository->findOneById($id);
+        $session = $request->getSession();
+
 
         if ($serie) {
+            $serieName = $serie->getName();
             $this->repository->remove($serie);
+            $session->set('success', "A série {$serieName} foi removida com sucesso!");
             return new RedirectResponse("/series", 201);
+
         }
-        return new RedirectResponse("/", 404);
+
+        $session->set('error', 'Série não encontrada');
+        return new RedirectResponse("/series", 404);
+
+
+
     }
 }

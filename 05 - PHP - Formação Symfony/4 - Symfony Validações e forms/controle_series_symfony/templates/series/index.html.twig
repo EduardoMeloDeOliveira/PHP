@@ -3,6 +3,16 @@
 {% block title %}{{ controller_name }}{% endblock %}
 
 {% block body %}
+
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex alert alert-success w-25 align-items-center justify-content-center">
+            {{ successMessage }}
+        </div>
+    </div>
+
+
+
     <div class="container d-flex justify-content-center align-items-center flex-column">
         <a href="{{ path('app_create') }}" class="btn btn-dark mb-3">Adicionar uma nova série</a>
         <ul class="list-group w-50">
