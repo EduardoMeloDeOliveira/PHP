@@ -7,7 +7,7 @@
         <a href="/series/create" class="btn btn-dark mb-3">Adicionar uma nova séria</a>
         <ul class="list-group">
             {% for serie in  seriesList %}
-                <li class="list-group-item"> {{ serie.name }}</li>
+                <li class="list-group-item"> {{ serie.id }} {{ serie.name }}</li>
             {% endfor %}
         </ul>
     </div>
