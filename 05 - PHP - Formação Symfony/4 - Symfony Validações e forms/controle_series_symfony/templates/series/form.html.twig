@@ -1,23 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title%}
+{% block title %}
     {{ controller_name }}
 {% endblock %}
 
 {% block body %}
 
+    {{ form_start(formulario, {'attr': {'class': 'form-class container'}}) }}
 
-    <form method="post" action="{{ path('app_create_series') }}">
-
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <label for="serieName" class="form-label">Nome da série</label>
-            <input type="text" id="serieName" name="seriesName" class="form-control w-25">
-            <button class="btn btn-dark mt-3">Adicionar</button>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {{ form_row(formulario.name, {'attr': {'class': 'form-control'}}) }}
         </div>
+    </div>
 
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-4 text-center">
+            {{ form_widget(formulario.submit, {'label': button_name, 'attr': {'class': 'btn btn-dark'}}) }}
+        </div>
+    </div>
 
-        <a class="btn btn-secondary ms-3 mt-4" href="/series">Voltar</a>
+    {{ form_end(formulario) }}
 
-    </form>
+    <a class="btn btn-secondary ms-3 mt-4" href="/series">Voltar</a>
 
 {% endblock %}

@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\SeriesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 #[ORM\Entity(repositoryClass: SeriesRepository::class)]
 class Series
@@ -15,7 +17,9 @@ class Series
 
   public function __construct(
       #[ORM\Column(length: 500)]
-      private ?string $name
+      #[Assert\NotBlank]
+      #[Assert\Length(min: 5)]
+      private ?string $name = ''
   )
   {
 
@@ -29,6 +33,11 @@ class Series
     public function getName(): ?string
     {
         return $this->name;
+    }
+
+    public function setId(?int $id): void
+    {
+        $this->id = $id;
     }
 
     public function setName(string $name): static
