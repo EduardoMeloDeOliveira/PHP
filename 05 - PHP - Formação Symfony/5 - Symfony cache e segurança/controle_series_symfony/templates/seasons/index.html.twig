@@ -7,10 +7,11 @@
         <ul class="list-group w-50">
             {% for season in seasons %}
 
-{#                {{ dump(season) }}#}
+                {#                {{ dump(season) }} #}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <span>{{ series_name }} - Temporada {{ season.number }}</span>
-                    <span class="badge bg-primary">{{ season.episode|length }} episódios</span>
+                    <a href="{{ path('app_episodes_redirect', {seasonId: season.id}) }}"><span
+                                class="badge bg-primary">{{ watched }}/{{ season.episode|length }} episódios assistidos</span></a>
                 </li>
             {% endfor %}
         </ul>

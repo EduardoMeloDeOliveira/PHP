@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ controller_name }}{% endblock %}
+
+{% block body %}
+    <div class="d-flex justify-content-center min-vw-100">
+
+        <form class="w-100 d-flex justify-content-center align-items-center flex-column" method="post">
+            <input type="hidden" name="seasonId" value="{{ season.id }}">
+
+
+            <div class="w-75 mb-3">
+                <a href="{{ path('app_seasons_redirect_info', {series : season.id}) }}"
+                   class="btn btn-secondary">Voltar</a>
+            </div>
+
+            <ul class="list-group w-75">
+                {% for episode in episodes %}
+                    <li class="list-group-item d-flex justify-content-sm-between align-items-center mt-4">
+                        Episódio - {{ episode.number }}
+                        <input type="checkbox"
+                               name="episodes[{{ episode.id }}]" {% if episode.watched %} checked {% endif %}>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <div>
+                <button class="btn btn-primary mt-4 mb-3">Marcar como assistido</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

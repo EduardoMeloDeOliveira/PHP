@@ -18,6 +18,9 @@ class Episode
     #[ORM\JoinColumn(nullable: false)]
     private ?Season $season = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?bool $watched = null;
+
     public function __construct(
         #[ORM\Column]
         private ?int $number = null)
@@ -52,5 +55,22 @@ class Episode
         $this->season = $season;
 
         return $this;
+    }
+
+    public function isWatched(): ?bool
+    {
+        return $this->watched;
+    }
+
+    public function setWatched(?bool $watched): static
+    {
+        $this->watched = $watched;
+
+        return $this;
+    }
+
+    public function getWatched(): ?bool
+    {
+        return $this->watched;
     }
 }
