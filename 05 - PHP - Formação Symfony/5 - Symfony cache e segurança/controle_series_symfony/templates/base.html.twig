@@ -10,11 +10,11 @@
     {% block stylesheets %}
         {{ encore_entry_link_tags('style') }}
     {% endblock %}
-
 </head>
 <body>
 <div class="d-flex justify-content-between align-items-center mt-3 mb-4 flex-column">
     <h2>{{ block('title') }}</h2>
+
     {% for alert, messages in app.flashes %}
         {% for message in messages %}
             <div class="alert alert-{{ alert }}">
@@ -22,12 +22,15 @@
             </div>
         {% endfor %}
     {% endfor %}
-
 </div>
 
 {% block body %}
-
-
 {% endblock %}
+
+{% if is_granted('ROLE_USER') %}
+    <a href="{{ path('app_logout') }}" class="btn btn-danger mt-4 ms-3">
+        Logout
+    </a>
+{% endif %}
 </body>
 </html>
