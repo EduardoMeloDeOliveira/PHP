@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ controller_name }}
+{% endblock %}
+
+{% block body %}
+
+    {{ form_start(formulario, {'attr': {'class': 'form-class container'}}) }}
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {{ form_row(formulario.seriesName, {'attr': {'class': 'form-control'}}) }}
+            {{ form_row(formulario.seasonsQuantity, {'attr': {'class': 'form-control'}}) }}
+            {{ form_row(formulario.episodesPerSeason, {'attr': {'class': 'form-control'}}) }}
+            {{ form_row(formulario.coverImage, {'attr': {'class': 'form-control-file'}}) }}
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-4 text-center">
+            {{ form_widget(formulario.submit,{'attr': {'class': 'btn btn-dark'}}) }}
+        </div>
+    </div>
+
+    {{ form_end(formulario) }}
+
+    <a class="btn btn-secondary ms-3 mt-4" href="/series">Voltar</a>
+
+{% endblock %}
