@@ -9,6 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\File;
 
 class SeriesType extends AbstractType
 {
@@ -20,7 +21,14 @@ class SeriesType extends AbstractType
             ->add('seriesName', options: ['label' => 'Nome'])
             ->add('seasonsQuantity', type: NumberType::class, options: ['label' => 'Quantidade de temporadas'])
             ->add('episodesPerSeason', type: NumberType::class, options: ['label' => 'Quantidade de episódios por temporada'])
-            ->add('coverImage', FileType::class, ['label' => 'Imagem de capa'])
+            ->add('coverImage', FileType::class, ['label' => 'Imagem de capa',
+                'constraints' => [
+                    new File([
+                        'mimeTypes' => ['image/*'],
+                    ])
+                ],
+                'required' => false,
+            ])
             ->add('submit', SubmitType::class,
                 $options['is_edit'] ? ['label' => 'Editar'] : ['label' => 'Adicionar'])
             ->setMethod($options['is_edit'] ? 'PUT' : 'POST');

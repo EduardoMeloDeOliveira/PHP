@@ -38,7 +38,7 @@ class SeasonsController extends AbstractController
         return $this->render('seasons/index.html.twig', [
             'controller_name' => "Temporadas da série: {$series->getName()}",
             'seasons' => $seasons,
-            'series_name' => $series->getName(),
+            'series' => $series,
             'watched' => $watchedEp,
         ]);
     }

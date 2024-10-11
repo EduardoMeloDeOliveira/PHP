@@ -67,11 +67,14 @@ class SeriesController extends AbstractController
         $uploadedImage = $input->coverImage;
         $newFileName = null;
 
+        if (!$form->isValid()) {
+            return $this->render("series/form.html.twig", [
+                "formulario" => $form,
+                "controller_name" => "Adicionar série",
+            ]);
+        }
 
         $directory = $this->getParameter('cover_image_directory');
-//        if (!is_dir($directory)) {
-//            mkdir($directory, 0777, true);
-//        }
 
         if ($uploadedImage) {
 
@@ -84,12 +87,7 @@ class SeriesController extends AbstractController
         }
 
 
-        if (!$form->isValid()) {
-            return $this->render("series/form.html.twig", [
-                "formulario" => $form,
-                "controller_name" => "Adicionar série",
-            ]);
-        }
+
 
 
         $serie = new Series($input->getSeriesName(), $newFileName);

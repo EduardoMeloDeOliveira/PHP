@@ -4,12 +4,14 @@
 
 {% block body %}
     <div class="container d-flex justify-content-center align-items-center flex-column">
-        <ul class="list-group w-50">
+        <img src="{{ asset('uploads/cover_image/') ~ series.coverPath }}"
+             alt="{{ series.name }} cover"
+             class="img-fluid rounded mb-4"
+             style="max-width: 300px; max-height: 400px; object-fit: cover;">        <ul class="list-group w-50">
             {% for season in seasons %}
 
-                {#                {{ dump(season) }} #}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>{{ series_name }} - Temporada {{ season.number }}</span>
+                    <span>{{ series.name }} - Temporada {{ season.number }}</span>
                     <a href="{{ path('app_episodes_redirect', {seasonId: season.id}) }}"><span
                                 class="badge bg-primary">{{ watched }}/{{ season.episode|length }} episódios assistidos</span></a>
                 </li>
