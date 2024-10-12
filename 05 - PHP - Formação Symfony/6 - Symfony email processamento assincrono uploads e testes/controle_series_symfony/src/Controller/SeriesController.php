@@ -8,6 +8,7 @@ use App\Entity\Season;
 use App\Entity\Series;
 use App\Form\SeriesType;
 use App\Message\SeriesWasCreated;
+use App\Message\SeriesWasDeleted;
 use App\Repository\SeriesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -126,6 +127,7 @@ class SeriesController extends AbstractController
         if ($serie) {
             $serieName = $serie->getName();
             $this->repository->remove($serie);
+            $this->messageBus->dispatch(new SeriesWasDeleted($serie));
             $this->addFlash('success', "A série {$serieName} foi removida com sucesso!");
             return new RedirectResponse("/series", 201);
 
